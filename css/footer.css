@@ -1,0 +1,31 @@
+.footer {
+    background-color: #1a2027;
+    height: 250px;
+    color: #fff;
+    position: relative;
+    top: 70px;
+}
+
+.footer .flex {
+    justify-content: space-around;
+}
+
+.footer .flex div:nth-child(2) {
+    display: flex;
+}
+
+.footer .card {
+    background-color: #202b38ce;
+    padding: 15px;
+    /*box-shadow: 0 0 1px 1px #000;*/
+}
+
+.footer i {
+    font-size: 22px;
+}
+
+@media screen and (max-width: 660px) {
+    .footer .flex {
+        flex-direction: column;
+    }
+}

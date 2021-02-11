@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextMovie || Movies Platform</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/framework.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/entertainment.css">
+ 
+    <!-- FontAwesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="navbar">
+        <div class="flex">
+            <h1 class="logo">NextMovie</h1>
+
+            <div class="menu-icon">
+                <i class="fas fa-bars" onclick="showNavEvent()"></i>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./entertainment.html">Entretenimiento</a></li>
+                    <li><a href="./about.html">Sobre nosotros</a></li>
+                    <li><a href="./contact.html">Contáctanos</a></li>
+                    <li><a href="./login.html">Iniciar sesión</a></li>
+                    <li><button class="btn btn-success" onclick="window.location='./register.html'">Registro</button></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="movies">
+        <div class="flex">
+            <div class="movies-container">
+                <h2>Comedia</h2>
+                <div class="main-container">
+                    <div class="movie">
+                        <img src="./images/comedy/baywatch_2a79_1600x900.jpg" alt="">
+                        <div class="movie-data">
+                            <h3>Guardianes de la Bahía</h3>
+                            <a href="#" class="btn btn-primary">Ver Ahora</a>
+                        </div>
+                    </div>
+
+                    <div class="movie">
+                        <img src="./images/comedy/hotel-transylvania-2.jpg" alt="">
+                        <div class="movie-data">
+                            <h3>Hotel Transilvania 2</h3>
+                            <a href="#" class="btn btn-primary">Ver Ahora</a>
+                        </div>
+                    </div>
+
+                    <div class="movie">
+                        <img src="./images/comedy/ted-2_9745_1600x900.jpg" alt="">
+                        <div class="movie-data">
+                            <h3>Ted 2</h3>
+                            <a href="#" class="btn btn-primary">Ver Ahora</a>
+                        </div>
+                    </div>
+
+                    <div class="movie">
+                        <img src="./images/comedy/vacation_7085_1600x900.jpg" alt="">
+                        <div class="movie-data">
+                            <h3>Vacaciones</h3>
+                            <a href="#" class="btn btn-primary">Ver Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movies-container">
+                <h2>Aventura</h2>
+                <div class="main-container">
+                    <div class="movie">
+                        <img src="./images/adventure/interstellar_937a_1600x900.jpg" alt="">
+                        <div class="movie-data">
+                            <h3>Interestelar</h3>
+                            <a href="#" class="btn btn-primary">Ver Ahora</a>
+                        </div>
+                    </div>
+
+                    <div class="movie">
+                        <img src="./images/adventure/the-jungle-book_cd51_1600x900.jpg" alt="">
+                        <div class="movie-data">
+                            <h3>El Libro de la Selva</h3>
+                            <a href="#" class="btn btn-primary">Ver Ahora</a>
+                        </div>
+                    </div>
+
+                    <div class="movie">
+                        <img src="./images/adventure/guardians-of-the-galaxy-vol-2_8128_1600x900.jpg" alt="">
+                        <div class="movie-data">
+                            <h3>Guardianes de la Galaxia 2</h3>
+                            <a href="#" class="btn btn-primary">Ver Ahora</a>
+                        </div>
+                    </div>
+
+                    <div class="movie">
+                        <img src="./images/adventure/rick-and-morty_2cad_1600x900.jpg" alt="">
+                        <div class="movie-data">
+                            <h3>Rick y Morty</h3>
+                            <a href="#" class="btn btn-primary">Ver Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movies-container">
+                <h2>Acción</h2>
+                <div class="main-container">
+                    <div class="movie">
+                        <img src="./images/action/blade-runner-2049_27d9_1600x900.jpg" alt="">
+                        <div class="movie-data">
+                            <h3>Blade Runner 2049</h3>
+                            <a href="#" class="btn btn-primary">Ver Ahora</a>
+                        </div>
+                    </div>
+
+                    <div class="movie">
+                        <img src="./images/action/dunkirk_4b8f_1600x900.jpg" alt="">
+                        <div class="movie-data">
+                            <h3>Dunkirk</h3>
+                            <a href="#" class="btn btn-primary">Ver Ahora</a>
+                        </div>
+                    </div>
+
+                    <div class="movie">
+                        <img src="./images/action/in-the-heart-of-the-sea_0173_1600x900.jpg" alt="">
+                        <div class="movie-data">
+                            <h3>In the heard of the Sea</h3>
+                            <a href="#" class="btn btn-primary">Ver Ahora</a>
+                        </div>
+                    </div>
+
+                    <div class="movie">
+                        <img src="./images/action/the-maze-runner_d958_1600x900.jpg" alt="">
+                        <div class="movie-data">
+                            <h3>Correr o Morir</h3>
+                            <a href="#" class="btn btn-primary">Ver Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container flex">
+            <div>
+                <h2 class="text-center">NextMovie</h2>
+                <p>Derechos reservados 2021.</p>
+            </div>
+
+            <div>
+                <div class="card"><i class="fab fa-youtube"></i></div>
+                <div class="card"><i class="fab fa-twitter"></i></div>
+                <div class="card"><i class="fab fa-instagram"></i></div>
+                <div class="card"><i class="fab fa-facebook-f"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextMovie || Movies Platform</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/framework.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- FontAwesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+    <!-- Navbar and main background image -->
+    <main>
+        <div class="navbar">
+            <div class="flex">
+                <h1 class="logo">NextMovie</h1>
+
+                <div class="menu-icon">
+                    <i class="fas fa-bars" onclick="showNavEvent()"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./entertainment.html">Entretenimiento</a></li>
+                        <li><a href="./about.html">Sobre nosotros</a></li>
+                        <li><a href="./contact.html">Contáctanos</a></li>
+                        <li><a href="./login.html">Iniciar sesión</a></li>
+                        <li><button class="btn btn-success" onclick="window.location='./register.html'">Registro</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Background image -->
+        <div class="bg-image">
+            <!-- Presentation section -->
+            <section class="presentation">
+                <h2>Empieza a ver tus peliculas y series favoritas ahora!</h2>
+                <p><strong>NextMovie</strong> es una <strong>plataforma</strong> de peliculas donde tú y toda tu familia podrán disfrutar de todo un mar de 
+                    <strong>peliculas y series</strong> en todo momento, <strong>maximizando la calidad y comodidad para mejorar la experiencia 
+                        actual en el entretenimiento.
+                    </strong>
+                </p>
+                <a href="" class="btn">Empiezar Ahora</a>
+            </section>
+        </div>
+    </main>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container">
+            <h3 class="text-center">Bienvenido a una de las plataformas de peliculas más potentes</h3>
+            <div class="flex">
+                <div class="card">
+                    <i class="fas fa-video fa-2x"></i>
+                    <h3>+1,000,000,00</h3>
+                    <p>Peliculas</p>
+                </div>
+                
+                <div class="card">
+                    <i class="fas fa-user-check fa-2x"></i>
+                    <h3>5,349,405</h3>
+                    <p>Personas</p>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-video fa-2x"></i>
+                    <h3>HD</h3>
+                    <p>Alta calidad de video</p>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-server fa-2x"></i>
+                    <h3>+100</h3>
+                    <p>Servidores</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Last movies -->
+    <div class="movies">
+        <h3 class="text-center">Actualizaciones semanales de nuevas peliculas y series</h3>
+        <div class="flex">
+            <div class="card">
+                <h3 class="text-center">The Avengers</h3>
+                <img src="./images/movies-premier/avengers.jpg" alt="">
+            </div>
+
+            <div class="card">
+                <h3 class="text-center">Batman</h3>
+                <img src="./images/movies-premier/batman.jpg" alt="">
+            </div>
+
+            <div class="card">
+                <h3 class="text-center">The Joker</h3>
+                <img src="./images/movies-premier/joker.jpg" alt="">
+            </div>
+
+            <div class="card">
+                <h3 class="text-center">New Word</h3>
+                <img src="./images/movies-premier/word.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer position">
+        <div class="container flex">
+            <div>
+                <h2 class="text-center">NextMovie</h2>
+                <p>Derechos reservados 2021.</p>
+            </div>
+
+            <div>
+                <div class="card"><i class="fab fa-youtube"></i></div>
+                <div class="card"><i class="fab fa-twitter"></i></div>
+                <div class="card"><i class="fab fa-instagram"></i></div>
+                <div class="card"><i class="fab fa-facebook-f"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/navbar.js"></script>
+</body>
+</html>

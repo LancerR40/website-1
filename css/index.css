@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+:root {
+    --success-color: rgb(39, 199, 39);
+    --primary-color: #1271cf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+    margin: 10px 0;
+    line-height: 1.2;
+    color: #fff;
+}
+
+h3 {
+    margin: 10px 0;
+    color: #fff;
+}
+
+p {
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Main background image */
+.bg-image {
+    background-image: url("./../images/home-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Presentation */
+.presentation {
+    width: 45%;
+    height: 280px;
+    margin-bottom: 100px;
+    padding: 0 40px;
+    color: #fff;
+}
+
+.presentation h2 {
+    font-size: 30px;
+}
+
+.presentation p {
+    line-height: 2rem;
+    margin-bottom: 30px;
+}
+
+.presentation a {
+    background: #1111119c;
+    padding: 15px 25px;
+    border: 1px solid #fff;
+}
+
+/* Stats */
+.stats {
+    background: #111111;
+    height: 350px;
+    color: #fff;
+    text-align: center;
+}
+
+.stats .container {
+    height: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stats .flex {
+    flex-wrap: wrap;
+}
+
+.stats .card {
+    width: 150px;
+    height: 150px;
+    margin: 0 20px;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.stats p {
+    font-size: 16px;
+}
+
+/* Movies */
+.movies {
+    background: #111111;
+    padding-bottom: 15px;
+}
+
+.movies h3 {
+    margin: 0;
+}
+
+.movies .flex {
+    padding-top: 60px;
+    flex-wrap: wrap;
+}
+
+.movies .card {
+    background: none;
+    width: 350px;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+}
+
+.movies .card:hover {
+    transform: translateY(-15px);
+}
+
+.movies .card h3 {
+    margin: 20px 0;
+}
+
+.movies img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.position {
+    position: relative;
+    top: 0;
+}
+
+@media screen and (max-width: 950px) {
+    /* Presentation section */
+    .stats {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .presentation {
+        width: 60%;
+    }
+
+    .presentation h2 {
+        font-size: 25px;
+    }
+
+    .stats .card {
+        width: 150px;
+        height: 150px;
+    }
+
+    .stats .card i {
+        font-size: 35px;
+    }
+
+    .stats .card p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .presentation {
+        width: 70%;
+    }
+
+    .presentation h2 {
+        font-size: 20px;
+    }
+
+    .presentation p {
+        font-size: 15px;
+    }
+
+    .stats {
+        height: auto;
+    }
+
+    .stats .card {
+        margin-top: 40px;
+    }
+
+    .movies {
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .movies img {
+        width: 80%;
+        margin: auto;
+    }
+}

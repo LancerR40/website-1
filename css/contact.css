@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./../images/home-bg.jpg");
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+    margin: 10px 0;
+    line-height: 1.2;
+    color: #fff;
+}
+
+h3 {
+    margin: 10px 0;
+    color: #fff;
+}
+
+p {
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contact {
+    position: relative;
+    top: 70px;
+    height: 105vh;
+    padding-top: 30px;
+    color: #fff;
+}
+
+.contact h2 {
+    font-weight: bold;
+}
+
+.contact h2:nth-child(1) {
+    font-size: 40px;
+}
+
+.contact hr {
+    border: 1px solid rgb(99, 99, 99);
+    margin: 1rem 0;
+}
+
+.contact form {
+    text-align: center;
+}
+
+.contact .form-control {
+    background: rgb(235, 235, 235);
+    width: 45%;
+    margin: 2rem auto;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control i {
+    color: rgb(39, 39, 39);
+    margin: 0 1rem;
+}
+
+.form-control input {
+    background: none;
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+
+.form-control textarea {
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.form-control input::placeholder, textarea::placeholder {
+    color: #000;
+}
+
+.contact .btn-success {
+    width: 45%;
+    height: 45px;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+    .contact .form-control {
+        width: 400px;
+    }
+
+    .contact .btn-success {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .contact {
+        height: 115vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact .form-control {
+        width: 350px;
+    }
+
+    .contact .btn-success {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contact {
+        height: 117vh;
+    }
+
+    .contact .form-control {
+        width: 80%;
+    }
+
+    .contact .btn-success {
+        width: 80%;
+    }
+}
+

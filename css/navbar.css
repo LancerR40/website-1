@@ -1,0 +1,106 @@
+.navbar {
+    background: #111111da;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 5px 1px #000;
+    position: absolute;
+    color: #fff;
+}
+
+.navbar .flex {
+    justify-content: none;
+}
+
+.navbar .logo {
+    position: absolute;
+    left: 40px;
+    font-weight: bold;
+}
+
+.navbar .menu-icon {
+    display: none;
+}
+
+.navbar nav {
+    position: absolute;
+    right: 40px;
+    overflow: hidden;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    padding: 10px;
+    margin: 0 2px;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    opacity: 0.8;
+}
+
+.navbar .btn-success {
+    padding: 12px 20px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 950px) {
+    .navbar .menu-icon {
+        position: absolute;
+        right: 20px;
+        font-size: 25px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar nav {
+        background: #111111;
+        width: 100%;
+        height: calc(100vh - 70px);
+        top: 70px;
+        right: 0;
+        left: -100%;
+        opacity: 1;
+        display: flex;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .navbar nav.active {
+        left: 0;
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .navbar ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar li {
+        width: 100%;
+        padding: 35px;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar li:hover {
+        background: #11111150;
+    }
+
+    .navbar .btn-success {
+        width: 45%;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navbar .btn-success {
+        width: 70%;
+        height: 45px;
+    }
+}

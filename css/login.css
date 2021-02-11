@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+    margin: 10px 0;
+    line-height: 1.2;
+    color: #fff;
+}
+
+h3 {
+    margin: 10px 0;
+    color: #fff;
+}
+
+p {
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.form-container {
+    background: linear-gradient(120deg, #1862d1, rgb(54, 36, 156));
+    position: relative;
+    top: 70px;
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container form {
+    width: 550px;
+    height: 450px;
+    box-shadow: 0 0 5px 1px rgb(37, 101, 240);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-container .form-header {
+    background: #11111141;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.form-container .form-control {
+   background: #fff;
+   width: 60%;
+   margin-top: 25px;
+   border-radius: 2px;
+   display: flex;
+}
+
+.form-control input {
+    background: none;
+    width: 90%;
+    height: 45px;
+    padding-left: 5px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.form-control:focus-within {
+    box-shadow: 0 0 1px 2px rgb(45, 230, 116);
+}
+
+.form-control input::placeholder {
+    color: #000;
+}
+
+.form-control .menu-icon {
+    width: 10%;
+    color: rgb(41, 40, 40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form .btn-success {
+    width: 60%;
+    height: 45px;
+    margin: 25px 0;
+}
+
+.recover-password {
+    background: #1111111f;
+    width: 60%;
+    padding: 8px 0;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.recover-password a {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+
+.recover-password:hover {
+    box-shadow: 0 0 1px 1.2px rgb(39, 226, 64);
+    text-shadow: 0 0 1px #fff;
+}
+
+@media screen and (max-width: 700px) {
+    .form-container form {
+        width: 450px;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .form-container form {
+        width: 350px;
+        height: 400px;
+    }
+
+    .form-container input {
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .form-container .menu-icon {
+        font-size: 12px;
+    }
+
+    form .btn-success {
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .form-container .form-header {
+        padding: 5px 0;
+    }
+
+    .form-container .form-header h2 {
+        font-size: 20px;
+    }
+
+    .form-container form {
+        width: 300px;
+        height: 315px;
+    }
+
+    .form-container .form-control {
+        margin-top: 15px;
+    }
+
+    .form-container input {
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .form-container .menu-icon {
+        font-size: 11px;
+    }
+
+    form .btn-success {
+        height: 30px;
+    }
+}

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./../images/home-bg.jpg");
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+    margin: 10px 0;
+    line-height: 1.2;
+    color: #fff;
+}
+
+h3 {
+    margin: 10px 0;
+    color: #fff;
+}
+
+p {
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.movies {
+    position: relative;
+    top: 70px;
+    padding: 15px 30px;
+    color: #fff;
+    display: flex;
+}
+
+.movies .flex {
+    
+    width: 100%;
+    
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.movies h2 {
+    font-weight: bold;
+}
+
+.movies .movies-container {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.movies .main-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-container .movie {
+    width: 300px;
+    margin: 10px 0;
+    box-shadow: 0 1px 5px 1px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.main-container .movie:hover {
+    transform: translateY(-15px);
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movie .movie-data {
+    background-color: #11111163;
+    position: absolute;
+    width: 300px;
+    height: 168.75px;
+    text-shadow: 0 0 2px #fff;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.movie-data a {
+    margin-top: 10px;
+    padding: 6px 20px;
+    font-size: 15px;
+}
+
+.movie:hover > .movie-data {
+    opacity: 1;
+}
+
+@media screen and (max-width: 650px) {
+    .movies-container {
+        text-align: center;
+    }
+
+    .main-container .movie {
+        margin: 15px auto;
+    }
+} 
+
+@media screen and (max-width: 400px) {
+    .main-container .movie {
+        width: 240px;
+    }
+}

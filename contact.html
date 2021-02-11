@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextMovie || Movies Platform</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/framework.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/contact.css">
+
+    <!-- FontAwesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="navbar">
+        <div class="flex">
+            <h1 class="logo">NextMovie</h1>
+
+            <div class="menu-icon">
+                <i class="fas fa-bars" onclick="showNavEvent()"></i>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./entertainment.html">Entretenimiento</a></li>
+                    <li><a href="./about.html">Sobre nosotros</a></li>
+                    <li><a href="./contact.html">Contáctanos</a></li>
+                    <li><a href="./login.html">Iniciar sesión</a></li>
+                    <li><button class="btn btn-success" onclick="window.location='./register.html'">Registro</button></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Contact  -->
+    <section class="contact">
+        <div class="container">
+           <h2 class="text-center">Contáctanos</h2>
+           <hr/>
+           <h2 class="text-center">¿ Necesta ayuda ? esta en el lugar indicado ?</h2>
+           <h3 class="text-center">Escribenos para cualquier sugerencia o duda que necesite!</h3>
+
+           <form>
+               <div class="form-control">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Nombre completo">
+               </div>
+
+               <div class="form-control">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Email">
+                </div>
+
+                <div class="form-control">
+                    <textarea cols="70" rows="10" placeholder="Redactar mesanje"></textarea>
+                </div>
+
+                <button class="btn btn-success">Enviar</button>
+           </form>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="container flex">
+            <div>
+                <h2 class="text-center">NextMovie</h2>
+                <p>Derechos reservados 2021.</p>
+            </div>
+
+            <div>
+                <div class="card"><i class="fab fa-youtube"></i></div>
+                <div class="card"><i class="fab fa-twitter"></i></div>
+                <div class="card"><i class="fab fa-instagram"></i></div>
+                <div class="card"><i class="fab fa-facebook-f"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/navbar.js"></script>
+</body>
+</html>

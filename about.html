@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextMovie || Movies Platform</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/framework.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/about.css">
+    
+    <!-- FontAwesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="navbar">
+        <div class="flex">
+            <h1 class="logo">NextMovie</h1>
+
+            <div class="menu-icon">
+                <i class="fas fa-bars" onclick="showNavEvent()"></i>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./entertainment.html">Entretenimiento</a></li>
+                    <li><a href="./about.html">Sobre nosotros</a></li>
+                    <li><a href="./contact.html">Contáctanos</a></li>
+                    <li><a href="./login.html">Iniciar sesión</a></li>
+                    <li><button class="btn btn-success" onclick="window.location='./register.html'">Registro</button></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="about">
+        <div class="main">
+            <h2>¿ Quienes somos ?</h2>
+        </div>
+        <div class="container">
+            <p>
+                Somos un equipo de ingenieros que desarrollaron y mantienen la plataforma online para el entretenimiento NextMovie,
+                nuestro trabajo es ofrecer el mejor servicio de entretenimiento mediante las actualizaciones constantes de peliculas
+                y series para que todo público que utilice nuestros servicios se sienta comodo desde casa o cualquier otro lugar
+                viendo sus peliculas favoritas, contamos con una plataforma segura al usuario protegiendo sus datos personales
+                así como tambien constantes actualizaciones del sistema para ir mejorando cada vez más, también somos muy atentos al público
+                en escuchar cada problema que podría surgir en el trasncurso de uso de nuestra plataforma así como también consejos de mejoras
+                para un mayor experiencia de usuario. 
+            </p>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="container flex">
+            <div>
+                <h2 class="text-center">NextMovie</h2>
+                <p>Derechos reservados 2021.</p>
+            </div>
+
+            <div>
+                <div class="card"><i class="fab fa-youtube"></i></div>
+                <div class="card"><i class="fab fa-twitter"></i></div>
+                <div class="card"><i class="fab fa-instagram"></i></div>
+                <div class="card"><i class="fab fa-facebook-f"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/navbar.js"></script>
+</body>
+</html>
